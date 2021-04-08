@@ -1,6 +1,7 @@
+//Builds the div grid structure
 for (i = 1; i <= 16; i++) {
-    let box = document.createElement("div");
-    box.id = "box-" + i;
-    box.class = "box";
-    document.getElementById("container").appendChild(box);
+    let item = document.createElement("div");
+    item.classList.add("item");
+    item.classList.add("item-" + i);
+    document.querySelector(".container").appendChild(item);
 }
